@@ -5,7 +5,7 @@ const app = express()
 
 const port = process.env.PORT || 4005
 
-app.use('/js', express.static(path.join(__dirname, 'public/main.js')))
+app.use('/js', express.static(path.join(__dirname, '../index.js')))
 
 app.listen(port, () => {
     console.log(`Docked at port ${port}`)
